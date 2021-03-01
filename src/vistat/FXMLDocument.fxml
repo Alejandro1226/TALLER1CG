@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="349.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorvistat.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="26.0" layoutY="20.0" onAction="#generarvalores" text="Generar Numeros" />
+      <Button layoutX="35.0" layoutY="304.0" mnemonicParsing="false" onAction="#Parar" text="Detener" />
+      <TextArea fx:id="tx1" layoutX="26.0" layoutY="59.0" prefHeight="200.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>
