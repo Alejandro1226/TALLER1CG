@@ -115,6 +115,7 @@ public class FXMLDocumentController implements Initializable {
                          res += Integer.toString(valordado1)+ Integer.toString(valordado2)+ ";\n";
                          
                          tx1.setText(res.replace(";", "\n"));
+                         //PRUEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
                          
         
