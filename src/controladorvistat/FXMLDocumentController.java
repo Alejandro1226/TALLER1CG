@@ -5,7 +5,9 @@
  */
 package controladorvistat;
 
+import com.sun.javafx.scene.layout.region.Margins;
 import datosp.Lanzamiento;
+import java.net.HttpCookie;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -14,6 +16,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.paint.Stop;
+import javax.swing.JOptionPane;
 import pila.Pila;
 import sun.misc.VM;
 
@@ -92,7 +95,7 @@ public class FXMLDocumentController implements Initializable {
        int valordado1;
        int valordado2;
        int veces=0;    
-        
+       String res ="";
         
 
            for(int i = 0; i < 4; i++){
@@ -109,6 +112,9 @@ public class FXMLDocumentController implements Initializable {
 
                          System.out.println(valordado1);
                          System.out.println(valordado2);
+                         res += Integer.toString(valordado1)+ Integer.toString(valordado2)+ ";\n";
+                         
+                         tx1.setText(res.replace(";", "\n"));
 
                          
         
@@ -116,9 +122,11 @@ public class FXMLDocumentController implements Initializable {
 	
             e.printStackTrace();
         }
+               
     }
-            System.out.println(x);
-            System.out.println(veces);
+         tx1.clear();
+         tx1.setText(PilaLanzamientos.toString());
+            
   }
     
     
