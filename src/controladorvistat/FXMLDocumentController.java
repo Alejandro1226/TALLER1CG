@@ -54,62 +54,28 @@ public class FXMLDocumentController implements Initializable {
 
  
 
-//        while (x = true) {				
-//        
-//            
-//        try {
-//            
-//            
-//	Thread.sleep(4000);
-////        Thread.sleep( 4000,9000);
-//
-//         veces++;
-//        valordado1=(int)(Math.random()*6+1);
-//        valordado2=(int)(Math.random()*6+1);
-//        
-//        
-//        
-//        PilaLanzamientos.apilar(new Lanzamiento(valordado1, valordado2));
-//		
-//        
-//        
-//	 System.out.println(valordado1);
-//          System.out.println(valordado2);
-//          
-//          if (veces > 4){
-//          x = false;
-//          }
-//          System.out.println(x);
-//          System.out.println(veces);
-//          
-//    
-//           
-//	} 
-//        
-//        catch (InterruptedException e) {
-//	
-//            e.printStackTrace();
-//	
-//        } 
-//			}
        int valordado1;
        int valordado2;
-       int veces=0;    
+  
        String res ="";
-        
 
            for(int i = 0; i < 4; i++){
             
                try {
-// Genera el time linea cada 4 segundos 
+                   
+                   res = "";
+                       // Genera el time linea cada 4 segundos 
                         Thread.sleep(4000);
 
-
+                        // Genera numeros aleatorios del 1 al 6 
                         valordado1=(int)(Math.random()*6+1);
                         valordado2=(int)(Math.random()*6+1);
                         
+                        // apilando los valores del dado 1 y dado 2 en la pila
                         PilaLanzamientos.apilar(new Lanzamiento(valordado1, valordado2));
 
+                        // Imprime en consola
+                        
                          System.out.println(valordado1);
                          System.out.println(valordado2);
                          res += Integer.toString(valordado1)+ Integer.toString(valordado2)+ ";\n";
