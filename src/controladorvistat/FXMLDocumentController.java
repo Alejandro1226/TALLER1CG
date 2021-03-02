@@ -107,7 +107,7 @@ public class FXMLDocumentController implements Initializable {
 
                         valordado1=(int)(Math.random()*6+1);
                         valordado2=(int)(Math.random()*6+1);
-
+                        
                         PilaLanzamientos.apilar(new Lanzamiento(valordado1, valordado2));
 
                          System.out.println(valordado1);
